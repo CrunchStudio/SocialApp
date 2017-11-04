@@ -11,11 +11,12 @@ import UIKit
 class ProfileViewController: UIViewController {
 
     @IBOutlet weak var profileImage: UIImageView!
-    
     @IBOutlet weak var userNameLabel: UILabel!
+    @IBOutlet weak var infoLabel: UILabel!
     
     var profileImageURL: String!
     var profileName: String!
+    var info: String!
     
     
     
@@ -30,11 +31,15 @@ class ProfileViewController: UIViewController {
         
         get_image(profileImageURL, profileImage)
         userNameLabel.text = profileName
+        infoLabel.text = info
+        
+        infoLabel.sizeToFit()
     }
     
-    public func setProfile(_ profileName:String, _ profileImageURL:String){
-        self.profileName = profileName
-        self.profileImageURL = profileImageURL
+    public func setProfile(_ user:User){
+        self.profileName = user.name
+        self.profileImageURL = user.imageURL
+        self.info = user.info
     }
 
     override func didReceiveMemoryWarning() {

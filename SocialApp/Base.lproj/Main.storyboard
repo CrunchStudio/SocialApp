@@ -68,22 +68,45 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="User Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M32-PO-BJJ">
-                                <frame key="frameInset" minX="26" minY="487" width="333" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="J1e-Ez-zR8">
+                                <frame key="frameInset" minX="9" minY="53" width="358" height="320"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="358" id="IXh-Gd-yui"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Info" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fh4-hl-omo">
+                                <frame key="frameInset" minX="9" minY="456" width="350" height="180"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="J1e-Ez-zR8">
-                                <frame key="frameInset" minX="12" minY="99" width="350" height="350"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="User Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M32-PO-BJJ">
+                                <frame key="frameInset" minX="9" minY="404" width="350" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="J1e-Ez-zR8" secondAttribute="trailing" constant="8" id="0kr-Yq-THP"/>
+                            <constraint firstItem="J1e-Ez-zR8" firstAttribute="top" secondItem="GRu-3B-lZR" secondAttribute="bottom" constant="33" id="APf-MV-Ksn"/>
+                            <constraint firstItem="Fh4-hl-omo" firstAttribute="top" secondItem="M32-PO-BJJ" secondAttribute="bottom" constant="8" id="DMn-AE-Xp1"/>
+                            <constraint firstItem="J1e-Ez-zR8" firstAttribute="leading" secondItem="UZI-D8-8qa" secondAttribute="leading" constant="9" id="HYD-qu-fVY"/>
+                            <constraint firstItem="J1e-Ez-zR8" firstAttribute="leading" secondItem="UZI-D8-8qa" secondAttribute="leading" constant="9" id="P8o-nc-I8S"/>
+                            <constraint firstItem="dtT-vt-ix8" firstAttribute="top" secondItem="Fh4-hl-omo" secondAttribute="bottom" constant="31" id="Qcw-nV-EVV"/>
+                            <constraint firstItem="M32-PO-BJJ" firstAttribute="leading" secondItem="UZI-D8-8qa" secondAttribute="leading" constant="9" id="Z8U-Sq-6dL"/>
+                            <constraint firstAttribute="trailing" secondItem="M32-PO-BJJ" secondAttribute="trailing" constant="16" id="ZwZ-Cx-04E"/>
+                            <constraint firstItem="J1e-Ez-zR8" firstAttribute="leading" secondItem="UZI-D8-8qa" secondAttribute="leading" constant="9" id="e8j-X6-8Fn"/>
+                            <constraint firstItem="J1e-Ez-zR8" firstAttribute="top" secondItem="GRu-3B-lZR" secondAttribute="bottom" constant="67" id="gjg-3e-g5M"/>
+                            <constraint firstItem="Fh4-hl-omo" firstAttribute="leading" secondItem="UZI-D8-8qa" secondAttribute="leading" constant="9" id="ty9-Sj-nK8"/>
+                            <constraint firstAttribute="trailing" secondItem="Fh4-hl-omo" secondAttribute="trailing" constant="16" id="u4b-Ig-dZt"/>
+                            <constraint firstAttribute="trailing" secondItem="J1e-Ez-zR8" secondAttribute="trailing" constant="8" id="zcS-kQ-pDV"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="rJ5-x2-Jcn"/>
                     <connections>
+                        <outlet property="infoLabel" destination="Fh4-hl-omo" id="BMD-kp-kRC"/>
                         <outlet property="profileImage" destination="J1e-Ez-zR8" id="xb2-KG-ve8"/>
                         <outlet property="userNameLabel" destination="M32-PO-BJJ" id="ig2-pl-dYQ"/>
                     </connections>

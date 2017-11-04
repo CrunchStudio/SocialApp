@@ -92,7 +92,7 @@ class UsersTableViewController: UITableViewController {
         
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let viewController = storyboard.instantiateViewController(withIdentifier :"ProfileViewController") as! ProfileViewController
-        viewController.setProfile(currentUser.name, currentUser.imageURL)
+        viewController.setProfile(currentUser)
         
         //self.present(viewController, animated: true)
         self.navigationController?.pushViewController(viewController, animated: true)

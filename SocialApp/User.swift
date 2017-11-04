@@ -14,6 +14,7 @@ struct User {
     var description : String
     var imageURL : String
     var thumbNailImageURL : String
+    var info : String
     
     
     enum SerializationError:Error {
@@ -28,6 +29,8 @@ struct User {
         guard let description = json["email"] as? String else {throw SerializationError.missing("Error")}
         guard let imageURL = json["image_url"] as? String else {throw SerializationError.missing("Error")}
         guard let thumbNailImageURL = json["image_thumbnail_url"] as? String else {throw SerializationError.missing("Error")}
+        guard let info = json["info"] as? String else {throw SerializationError.missing("Error")}
+
 
 
         
@@ -37,6 +40,7 @@ struct User {
         self.description = description
         self.imageURL = imageURL
         self.thumbNailImageURL = thumbNailImageURL
+        self.info = info
     }
     
     
