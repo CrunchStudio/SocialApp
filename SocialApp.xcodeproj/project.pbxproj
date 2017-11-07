@@ -112,15 +112,14 @@
 		310FB5C61F8B0B50009A05BC /* SocialApp */ = {
 			isa = PBXGroup;
 			children = (
+				31F638621FB15A0800B80831 /* Models */,
+				31F638611FB159CE00B80831 /* Controllers */,
 				3102C9D21F8DCF0E003192B3 /* Utils */,
 				310FB5C71F8B0B50009A05BC /* AppDelegate.swift */,
 				310FB5CB1F8B0B50009A05BC /* Main.storyboard */,
 				310FB5CE1F8B0B50009A05BC /* Assets.xcassets */,
 				310FB5D01F8B0B50009A05BC /* LaunchScreen.storyboard */,
 				310FB5D31F8B0B50009A05BC /* Info.plist */,
-				310FB5F51F8B245B009A05BC /* UsersTableViewController.swift */,
-				31FE392B1F8C80BC009FED69 /* User.swift */,
-				3107E1BE1FAA4C78009561ED /* ProfileViewController.swift */,
 			);
 			path = SocialApp;
 			sourceTree = "<group>";
@@ -141,6 +140,23 @@
 				310FB5E91F8B0B50009A05BC /* Info.plist */,
 			);
 			path = SocialAppUITests;
+			sourceTree = "<group>";
+		};
+		31F638611FB159CE00B80831 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3107E1BE1FAA4C78009561ED /* ProfileViewController.swift */,
+				310FB5F51F8B245B009A05BC /* UsersTableViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		31F638621FB15A0800B80831 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				31FE392B1F8C80BC009FED69 /* User.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
