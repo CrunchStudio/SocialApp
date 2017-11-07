@@ -7,16 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3102C9D11F8DCE79003192B3 /* ImageCacheLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3102C9D01F8DCE79003192B3 /* ImageCacheLoader.swift */; };
-		3107E1BF1FAA4C78009561ED /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3107E1BE1FAA4C78009561ED /* ProfileViewController.swift */; };
 		310FB5C81F8B0B50009A05BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310FB5C71F8B0B50009A05BC /* AppDelegate.swift */; };
 		310FB5CD1F8B0B50009A05BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 310FB5CB1F8B0B50009A05BC /* Main.storyboard */; };
 		310FB5CF1F8B0B50009A05BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 310FB5CE1F8B0B50009A05BC /* Assets.xcassets */; };
 		310FB5D21F8B0B50009A05BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 310FB5D01F8B0B50009A05BC /* LaunchScreen.storyboard */; };
 		310FB5DD1F8B0B50009A05BC /* SocialAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310FB5DC1F8B0B50009A05BC /* SocialAppTests.swift */; };
 		310FB5E81F8B0B50009A05BC /* SocialAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310FB5E71F8B0B50009A05BC /* SocialAppUITests.swift */; };
-		310FB5F61F8B245B009A05BC /* UsersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310FB5F51F8B245B009A05BC /* UsersTableViewController.swift */; };
-		31FE392C1F8C80BC009FED69 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31FE392B1F8C80BC009FED69 /* User.swift */; };
+		31F638641FB15C7400B80831 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F638631FB15C7400B80831 /* User.swift */; };
+		31F638681FB15D6F00B80831 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F638661FB15D6F00B80831 /* ProfileViewController.swift */; };
+		31F638691FB15D6F00B80831 /* UsersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F638671FB15D6F00B80831 /* UsersTableViewController.swift */; };
+		31F6386C1FB15E0300B80831 /* ImageCacheLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F6386B1FB15E0300B80831 /* ImageCacheLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,8 +37,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3102C9D01F8DCE79003192B3 /* ImageCacheLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageCacheLoader.swift; path = SocialApp/ImageCacheLoader.swift; sourceTree = "<group>"; };
-		3107E1BE1FAA4C78009561ED /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		310FB5C41F8B0B50009A05BC /* SocialApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		310FB5C71F8B0B50009A05BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		310FB5CC1F8B0B50009A05BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -51,8 +49,10 @@
 		310FB5E31F8B0B50009A05BC /* SocialAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SocialAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		310FB5E71F8B0B50009A05BC /* SocialAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialAppUITests.swift; sourceTree = "<group>"; };
 		310FB5E91F8B0B50009A05BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		310FB5F51F8B245B009A05BC /* UsersTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersTableViewController.swift; sourceTree = "<group>"; };
-		31FE392B1F8C80BC009FED69 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		31F638631FB15C7400B80831 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = SocialApp/Models/User.swift; sourceTree = "<group>"; };
+		31F638661FB15D6F00B80831 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileViewController.swift; path = Controllers/ProfileViewController.swift; sourceTree = "<group>"; };
+		31F638671FB15D6F00B80831 /* UsersTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UsersTableViewController.swift; path = Controllers/UsersTableViewController.swift; sourceTree = "<group>"; };
+		31F6386B1FB15E0300B80831 /* ImageCacheLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageCacheLoader.swift; path = Utils/ImageCacheLoader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,15 +80,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3102C9D21F8DCF0E003192B3 /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-				3102C9D01F8DCE79003192B3 /* ImageCacheLoader.swift */,
-			);
-			name = Utils;
-			path = ..;
-			sourceTree = "<group>";
-		};
 		310FB5BB1F8B0B50009A05BC = {
 			isa = PBXGroup;
 			children = (
@@ -112,9 +103,9 @@
 		310FB5C61F8B0B50009A05BC /* SocialApp */ = {
 			isa = PBXGroup;
 			children = (
-				31F638621FB15A0800B80831 /* Models */,
-				31F638611FB159CE00B80831 /* Controllers */,
-				3102C9D21F8DCF0E003192B3 /* Utils */,
+				31F6386D1FB15E1200B80831 /* Utils */,
+				31F6386A1FB15D7900B80831 /* Controllers */,
+				31F638651FB15CD600B80831 /* Models */,
 				310FB5C71F8B0B50009A05BC /* AppDelegate.swift */,
 				310FB5CB1F8B0B50009A05BC /* Main.storyboard */,
 				310FB5CE1F8B0B50009A05BC /* Assets.xcassets */,
@@ -142,21 +133,30 @@
 			path = SocialAppUITests;
 			sourceTree = "<group>";
 		};
-		31F638611FB159CE00B80831 /* Controllers */ = {
+		31F638651FB15CD600B80831 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				3107E1BE1FAA4C78009561ED /* ProfileViewController.swift */,
-				310FB5F51F8B245B009A05BC /* UsersTableViewController.swift */,
+				31F638631FB15C7400B80831 /* User.swift */,
+			);
+			name = Models;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		31F6386A1FB15D7900B80831 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				31F638671FB15D6F00B80831 /* UsersTableViewController.swift */,
+				31F638661FB15D6F00B80831 /* ProfileViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
 		};
-		31F638621FB15A0800B80831 /* Models */ = {
+		31F6386D1FB15E1200B80831 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				31FE392B1F8C80BC009FED69 /* User.swift */,
+				31F6386B1FB15E0300B80831 /* ImageCacheLoader.swift */,
 			);
-			name = Models;
+			name = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -293,11 +293,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				310FB5F61F8B245B009A05BC /* UsersTableViewController.swift in Sources */,
+				31F638681FB15D6F00B80831 /* ProfileViewController.swift in Sources */,
 				310FB5C81F8B0B50009A05BC /* AppDelegate.swift in Sources */,
-				3107E1BF1FAA4C78009561ED /* ProfileViewController.swift in Sources */,
-				31FE392C1F8C80BC009FED69 /* User.swift in Sources */,
-				3102C9D11F8DCE79003192B3 /* ImageCacheLoader.swift in Sources */,
+				31F638641FB15C7400B80831 /* User.swift in Sources */,
+				31F6386C1FB15E0300B80831 /* ImageCacheLoader.swift in Sources */,
+				31F638691FB15D6F00B80831 /* UsersTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
